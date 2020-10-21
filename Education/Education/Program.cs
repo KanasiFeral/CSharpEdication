@@ -178,11 +178,15 @@ namespace Education
             Console.WriteLine(" TrulalaInt() " + TrulalaInt() + 20 + "\n");
 
             Console.WriteLine(" TrulalaString() " + TrulalaString() );
-            Console.WriteLine(" TrulalaString() " + TrulalaString() + " плюс ещё текст");
+            Console.WriteLine(" TrulalaString() " + TrulalaString() + " плюс ещё текст\n");
 
-            Console.WriteLine(FuncWithValues(5 , 5));
-            Console.WriteLine(FuncWithValues(15 , 25));
-            Console.WriteLine(FuncWithValues(50 , 50));
+            Console.WriteLine("Функция результат: " + FuncSumm(5 , 5));
+            Console.WriteLine("Функция результат: " + FuncSumm(15 , 25));
+            Console.WriteLine("Функция результат: " + FuncSumm(50 , 50) + "\n");
+
+            ProcSumm(5, 5);
+            ProcSumm(15, 25);
+            ProcSumm(50, 50);
 
             #endregion
 
@@ -221,11 +225,18 @@ namespace Education
             return 10 + 30;
         }
 
-        static int FuncWithValues(int firstValue, int secondValue)
+        static int FuncSumm(int firstValue, int secondValue)
         {
             int summ = firstValue + secondValue;
 
             return summ;
+        }
+
+        static void ProcSumm(int firstValue, int secondValue)
+        {
+            int result = firstValue + secondValue;
+
+            Console.WriteLine($"Процедура результат: {result}");
         }
     }
 }

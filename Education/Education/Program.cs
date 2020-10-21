@@ -180,6 +180,10 @@ namespace Education
             Console.WriteLine(" TrulalaString() " + TrulalaString() );
             Console.WriteLine(" TrulalaString() " + TrulalaString() + " плюс ещё текст");
 
+            Console.WriteLine(FuncWithValues(5 , 5));
+            Console.WriteLine(FuncWithValues(15 , 25));
+            Console.WriteLine(FuncWithValues(50 , 50));
+
             #endregion
 
             // Задержка консоли
@@ -216,8 +220,6 @@ namespace Education
         {
             return 10 + 30;
         }
-
-       
 
         static int FuncWithValues(int firstValue, int secondValue)
         {

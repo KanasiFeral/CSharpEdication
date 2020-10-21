@@ -4,11 +4,6 @@ namespace Education
 {
     class Program
     {
-        public void Display()
-        {
-
-        }
-
         static void Main(string[] args)
         {
             #region Переменные
@@ -22,6 +17,7 @@ namespace Education
                 4. число с плавающей запятой (double);
                 5. логической (bool).
             
+            Переменная - это то, что хранит значение одного типа.
             Как объявлять переменную: <тип> пробел <название> точка с запятой.
             Имя переменной не может начинатся с цифры, спецсимвола или точки.
             Пример (объявление переменной): int number;
@@ -119,6 +115,8 @@ namespace Education
             //double mathResult = (150 + 50) / (25 * 2);
             //Console.WriteLine($"Много математических операций одновременно: {mathResult}");
 
+            //Console.WriteLine("Текст 1 " + " Текст 2");
+
             #endregion
 
             #region Методы: функции и процедуры
@@ -130,24 +128,34 @@ namespace Education
 
             Как объявлять метод? Пример: <модификатор доступа> <возвращаемое значение> <название>();
 
-            Процедура - метод, который не возвращает значения.
-            Функция - метод, который возвращает любой тип данных, отличный от void.
+            Процедура - метод, который не возвращает значения void (пустой).
+            Функция - метод, который возвращает любой тип данных, отличный от void (пустота).
+
+            return - обязательное ключевое слово, для возврата значения
+
+            Фигурные скобки у метода - это тело метода.
 
             Пример процедуры:
-            static void Display()
+            static void ProcedureDisplay()
             {
                 Console.WriteLine("Я процедура!");
+                Console.WriteLine($"Вывожу на экран сумму двух чисел: { 10 + 50 }");
+                Console.WriteLine("Маришка красавица!");
             }
 
+            Display();
+
             Пример функции:
-            static int ReturnSumm()
+            static int FuncWithoutValues()
             {
-                return 10 + 20;
+                return 10 + 30;
             }
+
+            Console.WriteLine(ReturnSumm());
 
             Методы также могут иметь входные параметры. С входными параметрами можно взаимодействовать только внутри метода.
 
-            static int Summ(int firstValue, int secondValue)
+            static int FuncWithValues(int firstValue, int secondValue)
             {
                 int summ = firstValue + secondValue;
 
@@ -159,10 +167,63 @@ namespace Education
             
             */
 
+            // Вызов процедуры
+            Trulalala();
+            Trulalala();
+            Trulalala();
+
+            // Вызов функции
+            Console.WriteLine(" TrulalaInt() " + TrulalaInt() );
+            Console.WriteLine(" TrulalaInt() " + TrulalaInt() * 10 );
+            Console.WriteLine(" TrulalaInt() " + TrulalaInt() + 20 + "\n");
+
+            Console.WriteLine(" TrulalaString() " + TrulalaString() );
+            Console.WriteLine(" TrulalaString() " + TrulalaString() + " плюс ещё текст");
+
             #endregion
 
             // Задержка консоли
             Console.ReadLine();
+        }
+
+        // Функция
+        static int TrulalaInt()
+        {
+            return 10;
+        }
+
+        static string TrulalaString()
+        {
+            return "ТЕКСТ";
+        }
+
+        // Процедура
+        static void Trulalala()
+        {
+            int result = (100 + 100) / 25;
+            Console.WriteLine(" Trulalala()  Результат: " + result);
+            Console.WriteLine(" Trulalala()  TRULALALA 3X\n");
+        }
+
+        static void ProcedureDisplay()
+        {
+            Console.WriteLine("Я процедура!");
+            Console.WriteLine($"Вывожу на экран сумму двух чисел: { 10 + 50 }");
+            Console.WriteLine("Маришка красавица!");
+        }
+
+        static int FuncWithoutValues()
+        {
+            return 10 + 30;
+        }
+
+       
+
+        static int FuncWithValues(int firstValue, int secondValue)
+        {
+            int summ = firstValue + secondValue;
+
+            return summ;
         }
     }
 }

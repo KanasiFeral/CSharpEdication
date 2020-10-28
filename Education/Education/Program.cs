@@ -193,6 +193,8 @@ namespace Education
 
             Console.WriteLine(ReturnPercentForNumeric(1000, 50));
 
+            DisplayPercentForNumeric(1000, 50);
+
             #endregion
 
             // Задержка консоли
@@ -261,6 +263,11 @@ namespace Education
             double result = (numeric / 100) * percent;
 
             return $"{percent}% от числа {numeric} равно {result}";
+        }
+
+        static void DisplayPercentForNumeric(int numeric, int percent)
+        {
+            Console.WriteLine(ReturnPercentForNumeric(numeric, percent));
         }
     }
 }

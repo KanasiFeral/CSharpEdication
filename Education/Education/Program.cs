@@ -191,6 +191,8 @@ namespace Education
             Console.WriteLine(ReturnStringWithBoolEnterParam(true));
             Console.WriteLine(ReturnStringWithBoolEnterParam(false));
 
+            Console.WriteLine(ReturnPercentForNumeric(1000, 50));
+
             #endregion
 
             // Задержка консоли
@@ -252,6 +254,13 @@ namespace Education
             {
                 return "Пришло false";
             }
+        }
+
+        static string ReturnPercentForNumeric(int numeric, int percent)
+        {
+            double result = (numeric / 100) * percent;
+
+            return $"{percent}% от числа {numeric} равно {result}";
         }
     }
 }

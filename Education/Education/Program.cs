@@ -188,6 +188,9 @@ namespace Education
             ProcSumm(15, 25);
             ProcSumm(50, 50);
 
+            Console.WriteLine(ReturnStringWithBoolEnterParam(true));
+            Console.WriteLine(ReturnStringWithBoolEnterParam(false));
+
             #endregion
 
             // Задержка консоли
@@ -237,6 +240,18 @@ namespace Education
             int result = firstValue + secondValue;
 
             Console.WriteLine($"Процедура результат: {result}");
+        }
+
+        static string ReturnStringWithBoolEnterParam (bool someConddition)
+        {
+            if (someConddition == true)
+            {
+                return "Пришло true";
+            }
+            else
+            {
+                return "Пришло false";
+            }
         }
     }
 }

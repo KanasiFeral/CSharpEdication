@@ -307,22 +307,22 @@ namespace Education
 
         static void DisplayReturnSumm(int number1, int number2)
         {
-            Console.WriteLine($"Результат работы функции returnSumm(int number1, int number2): {returnSumm(number1, number2)}");
+            Console.WriteLine($"Результат работы процедуры DisplayReturnSumm(int number1, int number2): {returnSumm(number1, number2)}");
         }
 
         static void DisplayReturnSummWithDefaultValues(int number1 = 50, int number2 = 100)
         {
-            Console.WriteLine($"Результат работы функции returnSumm(int number1, int number2): {returnSumm(number1, number2)}");
+            Console.WriteLine($"Результат работы процедуры DisplayReturnSummWithDefaultValues(int number1 = 50, int number2 = 100): {returnSumm(number1, number2)}");
         }
 
         static void DisplayReturnInt()
         {
-            Console.WriteLine($"Результат работы функции returnInt(): {returnInt()}");
+            Console.WriteLine($"Результат работы процедуры DisplayReturnInt(): {returnInt()}");
         }
 
         static void DisplayReturnValueString(string val)
         {
-            Console.WriteLine($"Результат работы функции returnValueString(string val): {returnValueString(val)}");
+            Console.WriteLine($"Результат работы процедуры DisplayReturnValueString(string val): {returnValueString(val)}");
         }
 
         #endregion

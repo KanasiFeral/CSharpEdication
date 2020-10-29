@@ -4,12 +4,12 @@ namespace Education
 {
     class Program
     {
-        static void Main(string[] args)
-        {
-            #region Переменные
+        #region Документация
 
-            /*
-             
+        #region Тема 1. Переменные
+
+        /*
+        
             Типы переменных: 
                 1. символ (char); 
                 2. строка (string); 
@@ -17,8 +17,9 @@ namespace Education
                 4. число с плавающей запятой (double);
                 5. логической (bool).
             
-            Переменная - это то, что хранит значение одного типа.
-            Как объявлять переменную: <тип> пробел <название> точка с запятой.
+            Переменная - это то, что хранит значение одного типа: строка, число, символ и т.д.
+            Как объявлять переменную: <тип> <название> | int(тип) nameVaraible(название);
+
             Имя переменной не может начинатся с цифры, спецсимвола или точки.
             Пример (объявление переменной): int number;
 
@@ -34,25 +35,15 @@ namespace Education
 
             Именам переменных нужно давать внятные названия, чтобы из названия сразу было понятно,
             для чего используется переменная.
-            
-            */
 
-            //int intWithValue = 0, intWithoutValue;
+        */
 
-            //double doubleWithValue = 0.0, doubleWithoutValue;
+        #endregion
 
-            //string strWithValue = "Строка", strWithoutValue;
+        #region Тема 2. Форматирование текста, вывод данных
 
-            //char chrWithValue = '$', chrWithoutValue;
-
-            //bool boolWithValue = true, boolWithoutValue;
-
-            #endregion
-
-            #region Форматирование текста, вывод на экран
-
-            /*
-            
+        /*
+        
             Для вывода данных на экран используется конструкция Console.WriteLine() или Console.Write()
             WriteLine() - вывод с новой строки, Write() - вывод с текущей строки.
             Внутрь круглых скобок помещается то, что мы хотим вывести на экран.
@@ -62,26 +53,14 @@ namespace Education
 
             \n - комбинация, после которой текст будет выводится с новой строки
             \t - комбинация, после которой текст будет иметь отступ в один tab
+         
+        */
 
-            */
+        #endregion
 
-            //Console.WriteLine("Привет, Я обучающая программа!");
-            //Console.WriteLine("Этот текст на текущей строке\n\tА вот этот уже на новой и с табуляцией!");
+        #region Тема 3. Математические операции
 
-            //Console.WriteLine("Вывод переменных объявленных выше:\n");
-
-            //Console.WriteLine("Строка: " + strWithValue);
-            //Console.WriteLine("Символ: " + chrWithValue);
-
-            //Console.WriteLine($"Целое число: {intWithValue}");
-            //Console.WriteLine($"Число с плавающей запятой: {doubleWithValue}");
-            //Console.WriteLine($"Логическое значение: {boolWithValue}");
-
-            #endregion
-
-            #region Метематические опереции с данными
-
-            /*
+        /*
              
             С данными можно выполнять математические операции: 
                 1. Сложение.
@@ -91,109 +70,136 @@ namespace Education
 
             Со строками можно выполнять только сложение строк.
             
-            */
+        */
 
-            //int a = 10, b = 20;
-            //int summ = a + b;
+        #endregion
 
-            //Console.WriteLine("Сумма a + b: " + summ);
+        #region Тема 4. Методы: функции, процедуры
 
-            //Console.WriteLine("Сложение двух чисел (10 + 20): " + (10 + 20));
-            //Console.WriteLine($"Сложение двух чисел (30 + 40): {30 + 40}");
-
-            //Console.WriteLine("Вычитание двух чисел (10 - 20): " + (10 - 20));
-            //Console.WriteLine($"Вычитание двух чисел (30 - 40): {30 - 40}");
-
-            //Console.WriteLine("Умножение двух чисел (10 * 20): " + (10 * 20));
-            //Console.WriteLine($"Умножение двух чисел (10 * 20): {30 * 40}");
-
-            //Console.WriteLine("Деление двух чисел (100 / 20): " + (100 / 20));
-            //Console.WriteLine($"Деление двух чисел (300 / 20): {300 / 20}");
-
-            //Console.WriteLine("Много математических операций одновременно: " + ( (10 + 20) / (15 * 2) ));
-
-            //double mathResult = (150 + 50) / (25 * 2);
-            //Console.WriteLine($"Много математических операций одновременно: {mathResult}");
-
-            //Console.WriteLine("Текст 1 " + " Текст 2");
-
-            #endregion
-
-            #region Методы: функции и процедуры
-
-            /*
+        /*
             
             Метод - это кусок кода, который можно вызывать по имени.
             Методы деляться на два типа: функция и процедура.
 
             Как объявлять метод? Пример: <модификатор доступа> <возвращаемое значение> <название>();
 
-            Процедура - метод, который не возвращает значения void (пустой).
-            Функция - метод, который возвращает любой тип данных, отличный от void (пустота).
+            Процедура - что-то делает, например: собака гуляет на улице
+            Функция - что-то возвращает, например: собака возвращает кинутый ей мячик.
 
             return - обязательное ключевое слово, для возврата значения
 
             Фигурные скобки у метода - это тело метода.
 
-            Пример процедуры:
-            static void ProcedureDisplay()
-            {
-                Console.WriteLine("Я процедура!");
-                Console.WriteLine($"Вывожу на экран сумму двух чисел: { 10 + 50 }");
-                Console.WriteLine("Маришка красавица!");
-            }
-
-            Display();
-
-            Пример функции:
-            static int FuncWithoutValues()
-            {
-                return 10 + 30;
-            }
-
-            Console.WriteLine(ReturnSumm());
-
             Методы также могут иметь входные параметры. С входными параметрами можно взаимодействовать только внутри метода.
-
-            static int FuncWithValues(int firstValue, int secondValue)
-            {
-                int summ = firstValue + secondValue;
-
-                return summ;
-            }
+            Входные параметры, это то, что пишется в круглый скобках после имени метода.
 
             Слово static пишем из-за требований метода Main(). 
             Все методы объявленные в данном файле требуют дополнительный модификатор доступа static.            
             
-            */
+        */
 
-            // Вызов процедуры
-            Trulalala();
-            Trulalala();
-            Trulalala();
+        #endregion
 
-            // Вызов функции
-            Console.WriteLine(" TrulalaInt() " + TrulalaInt() );
-            Console.WriteLine(" TrulalaInt() " + TrulalaInt() * 10 );
-            Console.WriteLine(" TrulalaInt() " + TrulalaInt() + 20 + "\n");
+        #endregion
 
-            Console.WriteLine(" TrulalaString() " + TrulalaString() );
-            Console.WriteLine(" TrulalaString() " + TrulalaString() + " плюс ещё текст\n");
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Добро пожаловать в обучающую программу!");
 
-            Console.WriteLine("Функция результат: " + FuncSumm(5 , 5));
-            Console.WriteLine("Функция результат: " + FuncSumm(15 , 25));
-            Console.WriteLine("Функция результат: " + FuncSumm(50 , 50) + "\n");
+            #region Переменные
 
-            ProcSumm(5, 5);
-            ProcSumm(15, 25);
-            ProcSumm(50, 50);
+            Console.WriteLine("\n\tПЕРЕМЕННЫЕ\n");
 
-            Console.WriteLine(ReturnStringWithBoolEnterParam(true));
-            Console.WriteLine(ReturnStringWithBoolEnterParam(false));
+            // 
+            int int1 = 0, int2 = 10;
+            Console.WriteLine($"Переменные типа int: {int1}, {int2}");
 
-            Console.WriteLine(ReturnPercentForNumeric(1000, 50));
+            double double1 = 0.0, double2 = 52.2;
+            Console.WriteLine($"Переменные типа double: {double1}, {double2}");
 
-            DisplayPercentForNumeric(1000, 50);
+            string string1 = "Строка", string2 = "456";
+            Console.WriteLine($"Переменные типа string: {string1}, {string2}");
+
+            char char1 = '$', char2 = 'A';
+            Console.WriteLine($"Переменные типа string: {char1}, {char2}");
+
+            bool bool1 = true, bool2 = false;
+            Console.WriteLine($"Переменные типа bool: {bool1}, {bool2}");
+
+            Console.WriteLine("\n-------------------------------------------\n");
+
+            #endregion
+
+            #region Форматирование текста, вывод на экран
+
+            Console.WriteLine("\n\tФОРМАТИРОВАНИЕ ТЕКСТА, ВЫВОД НА ЭКРАН\n");
+
+            Console.WriteLine("Этот текст на текущей строке\n\tА вот этот уже на новой и с табуляцией!");
+
+            Console.WriteLine("Вывод переменных объявленных выше:\n");
+
+            Console.WriteLine("Строка: " + string1);
+            Console.WriteLine("Символ: " + char1);
+
+            Console.WriteLine($"Целое число: {int1}");
+            Console.WriteLine($"Число с плавающей запятой: {double1}");
+            Console.WriteLine($"Логическое значение: {bool1}");
+
+            Console.WriteLine("\n-------------------------------------------\n");
+
+            #endregion
+
+            #region Метематические опереции с данными
+
+            Console.WriteLine("\n\tМАТЕМАТИЧЕСКИЕ ОПЕРАЦИИ С ДАННЫМИ\n");
+
+            int a = 10, b = 20;
+            int summ = a + b;
+
+            Console.WriteLine("Сумма a + b: " + summ);
+
+            Console.WriteLine("Сложение двух чисел (10 + 20): " + (10 + 20));
+            Console.WriteLine($"Сложение двух чисел (30 + 40): {30 + 40}");
+
+            Console.WriteLine("Вычитание двух чисел (10 - 20): " + (10 - 20));
+            Console.WriteLine($"Вычитание двух чисел (30 - 40): {30 - 40}");
+
+            Console.WriteLine("Умножение двух чисел (10 * 20): " + (10 * 20));
+            Console.WriteLine($"Умножение двух чисел (10 * 20): {30 * 40}");
+
+            Console.WriteLine("Деление двух чисел (100 / 20): " + (100 / 20));
+            Console.WriteLine($"Деление двух чисел (300 / 20): {300 / 20}");
+
+            Console.WriteLine("Много математических операций одновременно: " + ((10 + 20) / (15 * 2)));
+
+            double mathResult = (150 + 50) / (25 * 2);
+            Console.WriteLine($"Много математических операций одновременно: {mathResult}");
+
+            Console.WriteLine("Текст 1 " + " Текст 2");
+
+            Console.WriteLine("\n-------------------------------------------\n");
+
+            #endregion
+
+            #region Методы: функции и процедуры
+
+            Console.WriteLine("\n\tМЕТОДЫ: ФУНКЦИИ И ПРОЦЕДУРЫ\n");
+
+            Console.WriteLine($"Вывод работы функции returnInt(): {returnInt()}");
+            Console.WriteLine($"Вывод работы функции returnDouble(): {returnDouble()}");
+            Console.WriteLine($"Вывод работы функции returnString(): {returnString()}");
+            Console.WriteLine($"Вывод работы функции returnChar(): {returnChar()}");
+            Console.WriteLine($"Вывод работы функции returnBoolTrue(): {returnBoolTrue()}");
+            Console.WriteLine($"Вывод работы функции returnBoolFalse(): {returnBoolFalse()}");
+
+            Console.WriteLine($"Вывод работы функции returnValueInt(int val): {returnValueInt(10)}");
+            Console.WriteLine($"Вывод работы функции returnValueDouble(double val): {returnValueDouble(85.5)}");
+            Console.WriteLine($"Вывод работы функции returnValueString(string val): {returnValueString("Строка с данными! + 452282")}");
+            Console.WriteLine($"Вывод работы функции returnValueChar(char val): {returnValueChar('$')}");
+            Console.WriteLine($"Вывод работы функции returnValueBool(bool val): {returnValueBool(true)}");
+            Console.WriteLine($"Вывод работы функции returnValueBool(bool val): {returnValueBool(false)}");
+
+            Console.WriteLine("\n-------------------------------------------\n");
 
             #endregion
 
@@ -201,73 +207,73 @@ namespace Education
             Console.ReadLine();
         }
 
-        // Функция
-        static int TrulalaInt()
+        #region Функции без входных параметров. Возвращают какое-то значение
+
+        static int returnInt()
         {
             return 10;
         }
 
-        static string TrulalaString()
+        static double returnDouble()
         {
-            return "ТЕКСТ";
+            return 25.5;
         }
 
-        // Процедура
-        static void Trulalala()
+        static string returnString()
         {
-            int result = (100 + 100) / 25;
-            Console.WriteLine(" Trulalala()  Результат: " + result);
-            Console.WriteLine(" Trulalala()  TRULALALA 3X\n");
+            return "Строка данных";
         }
 
-        static void ProcedureDisplay()
+        static char returnChar()
         {
-            Console.WriteLine("Я процедура!");
-            Console.WriteLine($"Вывожу на экран сумму двух чисел: { 10 + 50 }");
-            Console.WriteLine("Маришка красавица!");
+            return '$';
         }
 
-        static int FuncWithoutValues()
+        static bool returnBoolTrue()
         {
-            return 10 + 30;
+            return true;
         }
 
-        static int FuncSumm(int firstValue, int secondValue)
+        static bool returnBoolFalse()
         {
-            int summ = firstValue + secondValue;
-
-            return summ;
+            return false;
         }
 
-        static void ProcSumm(int firstValue, int secondValue)
-        {
-            int result = firstValue + secondValue;
+        #endregion
 
-            Console.WriteLine($"Процедура результат: {result}");
+        #region Функции с одним входным параметром. Возвращают этот входной параметр
+
+        static int returnValueInt(int val)
+        {
+            return val;
         }
 
-        static string ReturnStringWithBoolEnterParam (bool someConddition)
+        static double returnValueDouble(double val)
         {
-            if (someConddition == true)
-            {
-                return "Пришло true";
-            }
-            else
-            {
-                return "Пришло false";
-            }
+            return val;
         }
 
-        static string ReturnPercentForNumeric(int numeric, int percent)
+        static string returnValueString(string val)
         {
-            double result = (numeric / 100) * percent;
-
-            return $"{percent}% от числа {numeric} равно {result}";
+            return val;
         }
 
-        static void DisplayPercentForNumeric(int numeric, int percent)
+        static char returnValueChar(char val)
         {
-            Console.WriteLine(ReturnPercentForNumeric(numeric, percent));
+            return val;
         }
+
+        static bool returnValueBool(bool val)
+        {
+            return val;
+        }
+
+        #endregion
+
+        #region Процедуры
+
+
+
+        #endregion
     }
 }

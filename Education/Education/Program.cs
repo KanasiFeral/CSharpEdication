@@ -185,19 +185,31 @@ namespace Education
 
             Console.WriteLine("\n\tМЕТОДЫ: ФУНКЦИИ И ПРОЦЕДУРЫ\n");
 
-            Console.WriteLine($"Вывод работы функции returnInt(): {returnInt()}");
-            Console.WriteLine($"Вывод работы функции returnDouble(): {returnDouble()}");
-            Console.WriteLine($"Вывод работы функции returnString(): {returnString()}");
-            Console.WriteLine($"Вывод работы функции returnChar(): {returnChar()}");
-            Console.WriteLine($"Вывод работы функции returnBoolTrue(): {returnBoolTrue()}");
-            Console.WriteLine($"Вывод работы функции returnBoolFalse(): {returnBoolFalse()}");
+            Console.WriteLine($"Результат работы функции returnInt(): {returnInt()}");
+            Console.WriteLine($"Результат работы функции returnDouble(): {returnDouble()}");
+            Console.WriteLine($"Результат работы функции returnString(): {returnString()}");
+            Console.WriteLine($"Результат работы функции returnChar(): {returnChar()}");
+            Console.WriteLine($"Результат работы функции returnBoolTrue(): {returnBoolTrue()}");
+            Console.WriteLine($"Результат работы функции returnBoolFalse(): {returnBoolFalse()}");
 
-            Console.WriteLine($"Вывод работы функции returnValueInt(int val): {returnValueInt(10)}");
-            Console.WriteLine($"Вывод работы функции returnValueDouble(double val): {returnValueDouble(85.5)}");
-            Console.WriteLine($"Вывод работы функции returnValueString(string val): {returnValueString("Строка с данными! + 452282")}");
-            Console.WriteLine($"Вывод работы функции returnValueChar(char val): {returnValueChar('$')}");
-            Console.WriteLine($"Вывод работы функции returnValueBool(bool val): {returnValueBool(true)}");
-            Console.WriteLine($"Вывод работы функции returnValueBool(bool val): {returnValueBool(false)}");
+            Console.WriteLine($"Результат работы функции returnValueInt(int val): {returnValueInt(10)}");
+            Console.WriteLine($"Результат работы функции returnValueDouble(double val): {returnValueDouble(85.5)}");
+            Console.WriteLine($"Результат работы функции returnValueString(string val): {returnValueString("Строка с данными! + 452282")}");
+            Console.WriteLine($"Результат работы функции returnValueChar(char val): {returnValueChar('$')}");
+            Console.WriteLine($"Результат работы функции returnValueBool(bool val): {returnValueBool(true)}");
+            Console.WriteLine($"Результат работы функции returnValueBool(bool val): {returnValueBool(false)}");
+
+            Console.WriteLine($"Результат работы функции returnSumm(int number1, int number2): {returnSumm(10, 50)}");
+            Console.WriteLine($"Результат работы функции (double d1, double d2, double d3): {(50.555, 85.55455, 10.5)}");
+            Console.WriteLine($"Результат работы функции percent(int numeric, int percent, string name): {percent(20, 100, "Гладиолус")}");
+
+            DisplayReturnSumm(10, 15);
+            DisplayReturnSummWithDefaultValues();
+            DisplayReturnSummWithDefaultValues(10);
+            DisplayReturnSummWithDefaultValues(10, 50);
+            DisplayReturnInt();
+            DisplayReturnValueString("Бамбук");
+
 
             Console.WriteLine("\n-------------------------------------------\n");
 
@@ -270,9 +282,48 @@ namespace Education
 
         #endregion
 
+        #region Функции с несколькими входными параметрами
+
+        static int returnSumm(int number1, int number2)
+        {
+            return number1 + number2;
+        }
+
+        static double threeDoubleParams(double d1, double d2, double d3)
+        {
+            return ((d1 + d2) / 100) * d3;
+        }
+
+        static string percent(int numeric, int percent, string name)
+        {
+            double result = (numeric / 100) * percent;
+
+            return $"{percent}% от числа {numeric} равен {result}, потому что {name}";
+        }
+
+        #endregion
+
         #region Процедуры
 
+        static void DisplayReturnSumm(int number1, int number2)
+        {
+            Console.WriteLine($"Результат работы функции returnSumm(int number1, int number2): {returnSumm(number1, number2)}");
+        }
 
+        static void DisplayReturnSummWithDefaultValues(int number1 = 50, int number2 = 100)
+        {
+            Console.WriteLine($"Результат работы функции returnSumm(int number1, int number2): {returnSumm(number1, number2)}");
+        }
+
+        static void DisplayReturnInt()
+        {
+            Console.WriteLine($"Результат работы функции returnInt(): {returnInt()}");
+        }
+
+        static void DisplayReturnValueString(string val)
+        {
+            Console.WriteLine($"Результат работы функции returnValueString(string val): {returnValueString(val)}");
+        }
 
         #endregion
     }

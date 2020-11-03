@@ -141,23 +141,23 @@ namespace Education
 
         #endregion
 
-        #region Тема 8. Условия if else / switch case
+        #region Тема 8. Рекурсивные функции
 
         #endregion
 
-        #region Тема 9. Массивы, коллекции, цикл foreach
+        #region Тема 9. Условия if else / switch case
 
         #endregion
 
-        #region Тема 10. Массив параметров и ключевое слово params
+        #region Тема 10. Массивы, коллекции, цикл foreach
 
         #endregion
 
-        #region Тема 11. Перечисления enum
+        #region Тема 11. Массив параметров и ключевое слово params
 
         #endregion
 
-        #region Тема 12. Рекурсивные функции
+        #region Тема 12. Перечисления enum
 
         #endregion
 

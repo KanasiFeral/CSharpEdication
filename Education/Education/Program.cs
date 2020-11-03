@@ -199,7 +199,6 @@ namespace Education
 
             Console.WriteLine("\n\tПЕРЕМЕННЫЕ\n");
 
-            // 
             int int1 = 0, int2 = 10;
             Console.WriteLine($"Переменные типа int: {int1}, {int2}");
 

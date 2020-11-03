@@ -195,7 +195,7 @@ namespace Education
         {
             Console.WriteLine("Добро пожаловать в обучающую программу!");
 
-            #region Переменные
+            #region Тема 1. Переменные
 
             Console.WriteLine("\n\tПЕРЕМЕННЫЕ\n");
 
@@ -218,7 +218,7 @@ namespace Education
 
             #endregion
 
-            #region Форматирование текста, вывод на экран
+            #region Тема 2. Форматирование текста, вывод данных
 
             Console.WriteLine("\n\tФОРМАТИРОВАНИЕ ТЕКСТА, ВЫВОД НА ЭКРАН\n");
 
@@ -237,7 +237,7 @@ namespace Education
 
             #endregion
 
-            #region Метематические опереции с данными
+            #region Тема 3. Математические операции
 
             Console.WriteLine("\n\tМАТЕМАТИЧЕСКИЕ ОПЕРАЦИИ С ДАННЫМИ\n");
 
@@ -269,7 +269,7 @@ namespace Education
 
             #endregion
 
-            #region Методы: функции и процедуры
+            #region Тема 4. Методы: функции, процедуры
 
             Console.WriteLine("\n\tМЕТОДЫ: ФУНКЦИИ И ПРОЦЕДУРЫ\n");
 
@@ -303,7 +303,7 @@ namespace Education
 
             #endregion
 
-            #region Циклы
+            #region Тема 5. Циклы
 
             // Цикл с итератором
             // i++ - i + 1

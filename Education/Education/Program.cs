@@ -100,7 +100,7 @@ namespace Education
 
         #endregion
 
-        #region Тема5. Циклы
+        #region Тема 5. Циклы
 
         /*
          
@@ -130,6 +130,62 @@ namespace Education
             continue - пропустить текущий шаг.
 
         */
+
+        #endregion
+
+        #region Тема 6. Перегрузка методов
+
+        #endregion
+
+        #region Тема 7. Передача параметров по ссылке и значению. Выходные параметры
+
+        #endregion
+
+        #region Тема 8. Условия if else / switch case
+
+        #endregion
+
+        #region Тема 9. Массивы, коллекции, цикл foreach
+
+        #endregion
+
+        #region Тема 10. Массив параметров и ключевое слово params
+
+        #endregion
+
+        #region Тема 11. Перечисления enum
+
+        #endregion
+
+        #region Тема 12. Рекурсивные функции
+
+        #endregion
+
+        #region Тема 13. Кортежи
+
+        #endregion
+
+        #region Тема 14. Модификаторы доступа. Public / private / protected / internal / protected internal / private protected
+
+        #endregion
+
+        #region Тема 15. Обработка исключений. Конструкция try..catch..finally
+
+        #endregion
+
+        #region Тема 16. Классы
+
+        #endregion
+
+        #region Тема 17. Свойства
+
+        #endregion
+
+        #region Тема 18. Статические члены и модификатор static
+
+        #endregion
+
+        #region Тема 19. Интерфейсы
 
         #endregion
 

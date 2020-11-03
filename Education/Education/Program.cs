@@ -423,6 +423,8 @@ namespace Education
             Console.ReadLine();
         }
 
+        #region Тема 4. Методы: функции, процедуры
+
         #region Функции без входных параметров. Возвращают какое-то значение
 
         static int returnInt()
@@ -528,6 +530,8 @@ namespace Education
         {
             Console.WriteLine($"Результат работы процедуры DisplayReturnValueString(string val): {returnValueString(val)}");
         }
+
+        #endregion
 
         #endregion
     }

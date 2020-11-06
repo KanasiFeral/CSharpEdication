@@ -437,6 +437,37 @@ namespace Education
                 DisplayLoopPercent(i, number);
             }
 
+            // Вставка пустой строки для более приятного отображения данных на экране
+            Console.WriteLine();
+
+            for (int i = 0; i < 10; i++)
+            {
+                DisplayIterator(i, "for");
+            }
+
+            // Вставка пустой строки для более приятного отображения данных на экране
+            Console.WriteLine();
+
+            int i1 = 0;
+            while (i1 < 10)
+            {
+                DisplayIterator(i1, "while");
+
+                i1++;
+            }
+
+            // Вставка пустой строки для более приятного отображения данных на экране
+            Console.WriteLine();
+
+            int i2 = 0;
+            do
+            {
+                DisplayIterator(i1, "do while");
+
+                i2++;
+            } 
+            while (i2 < 10);
+
             #endregion
 
             // Задержка консоли
@@ -455,6 +486,11 @@ namespace Education
         static void DisplayLoopPercent(int percent, int number)
         {
             Console.WriteLine($"{percent}% от числа {number} равен: {ReturnPercent(percent, number)}");
+        }
+
+        static void DisplayIterator(int iterator, string loopName)
+        {
+            Console.WriteLine($"Цикл {loopName}, шаг {iterator}");
         }
 
         #endregion

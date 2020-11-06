@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Data;
 
 namespace Education
 {
@@ -417,11 +418,46 @@ namespace Education
                 Console.WriteLine($"for double: {i}");
             }
 
+            // Вставка пустой строки для более приятного отображения данных на экране
+            Console.WriteLine();
+
+            int number = 100;
+            // Цикл с использованием функции
+            for (int i = 0; i < 100; i += 10)
+            {
+                Console.WriteLine($"{i}% от числа {number} равен: {ReturnPercent(i, number)}");
+            }
+
+            // Вставка пустой строки для более приятного отображения данных на экране
+            Console.WriteLine();
+
+            // Цикл с использованием процедуры
+            for (int i = 0; i < 100; i += 10)
+            {
+                DisplayLoopPercent(i, number);
+            }
+
             #endregion
 
             // Задержка консоли
             Console.ReadLine();
         }
+
+        #region Функции используемые в циклах
+
+        static double ReturnPercent(int percent, int number)
+        {
+            double result = (number / 100) * percent;
+
+            return result;
+        }
+
+        static void DisplayLoopPercent(int percent, int number)
+        {
+            Console.WriteLine($"{percent}% от числа {number} равен: {ReturnPercent(percent, number)}");
+        }
+
+        #endregion
 
         #region Тема 4. Методы: функции, процедуры
 

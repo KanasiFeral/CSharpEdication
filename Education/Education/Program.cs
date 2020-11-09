@@ -136,6 +136,27 @@ namespace Education
 
         #region Тема 6. Перегрузка методов
 
+        /*
+        
+        Перегрузка метода, если в кратце, то это тогда, когда у метода одинаковое имя, но разное количество входных параметров.
+        И в зависимости от того, сколько параметров передаётся в метод, тот метод и вызывается. 
+        Если передать 2 параметра, вызовится первый метод, если три, то второй и т.д. Плюс важен тип передаваемых данных.
+        Это нужно, когда нужно использовать один и тот же метод, но с разными входными параметрами.
+
+        Для функции возвращаемый тип не имеет значения. Т.е. метод int Add(int a1) и метод double Add(int a1) работать не будут!
+
+        Пример метода Add:
+
+        Add()
+        Add(double a1, int a2)
+        Add(int a1, int a2)
+        Add(int a1, double a2)
+        Add(int a1, int a2, int a3)
+        Add(int a1, int a2, int a3, int a4)
+        Add(double a1, double a2)
+         
+        */
+
         #endregion
 
         #region Тема 7. Передача параметров по ссылке и значению. Выходные параметры
@@ -470,9 +491,112 @@ namespace Education
 
             #endregion
 
+            #region Тема 6. Перегрузка методов
+
+            Console.WriteLine();
+
+            // Процедуры
+            Add();
+            Add(12.0, 5);
+            Add(55, 55);
+            Add(5, 12.0);
+            Add(5, 10, 15);
+            Add(5, 5, 4, 1);
+            Add(15.5, 55.6);
+            Add("KAKKAKAKAKAK");
+
+            // Функции
+            Console.WriteLine( Add("Перегрузка функции Add(string a1, int a2)", 10) );
+            Console.WriteLine( Add(10, 5.5, "Перегрузка функции Add(int a1, double a2, string a3)") );
+
+            Console.WriteLine();
+            // Цикл с процедурой
+            for (int i = 0; i < 10; i++)
+            {
+                //Console.WriteLine($"Цикл for от 0 до 10, шаг {i}");
+                DisplayForValue(i);
+            }
+
+            Console.WriteLine();
+            // Цикл с функцией
+            for (int i = 0; i < 10; i++)
+            {
+                Console.WriteLine($"Цикл for с использованием функции:  {Summ(i)}, шаг - {i}");
+            }
+
+            #endregion
+
             // Задержка консоли
             Console.ReadLine();
         }
+
+        #region Тема 6. Перегрузка методов
+
+        static void DisplayForValue(int i)
+        {
+            Console.WriteLine($"Цикл for от 0 до 10, шаг {i}");
+        }
+
+        static int Summ(int i)
+        {
+            return i + 10;
+        }
+
+        // 7 Процедур
+        static void Add()
+        {
+            Console.WriteLine("Add без параметров");
+        }
+
+        static void Add(double a1, int a2)
+        {
+            Console.WriteLine("Add(double a1, int a2)");
+        }
+
+        static void Add(int a1, int a2)
+        {
+            Console.WriteLine("Add(int a1, int a2)");
+        }
+
+        static void Add(int a1, double a2)
+        {
+            Console.WriteLine("Add(int a1, double a2)");
+        }
+
+        static void Add(int a1, int a2, int a3)
+        {
+            Console.WriteLine("Add(int a1, int a2, int a3)");
+        }
+
+        static void Add(int a1, int a2, int a3, int a4)
+        {
+            Console.WriteLine("Add(int a1, int a2, int a3, int a4)");
+        }
+
+        static void Add(double a1, double a2)
+        {
+            Console.WriteLine("Add(double a1, double a2)");
+        }
+
+        static void Add(string a1)
+        {
+            Console.WriteLine("Add(string a1)");
+        }
+
+        // 2 функции
+        static int Add(string a1, int a2)
+        {
+            Console.WriteLine(a1);
+
+            return a2 * 2;
+        }
+
+        static string Add(int a1, double a2, string a3)
+        {
+            return $"{a3} - {a1 * a2}";
+        }
+
+        #endregion
 
         #region Функции используемые в циклах
 

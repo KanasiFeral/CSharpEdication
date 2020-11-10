@@ -580,7 +580,7 @@ namespace Education
 
         static void Add(string a1)
         {
-            Console.WriteLine("Add(string a1)");
+            Console.WriteLine($"Add(string a1): {a1}");
         }
 
         // 2 функции
